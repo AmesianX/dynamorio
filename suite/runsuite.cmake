@@ -41,9 +41,7 @@ if (APPLE)
   set(extra_ctest_args INCLUDE_LABEL OSX)
 endif ()
 
-if (x86)
-  set(extra_ctest_args INCLUDE_LABEL TESTBUG4711)
-endif ()
+set(extra_ctest_args INCLUDE_LABEL TESTBUG4711)
 
 include("${CTEST_SCRIPT_DIRECTORY}/runsuite_common_pre.cmake")
 
